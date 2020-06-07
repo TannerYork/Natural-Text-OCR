@@ -95,8 +95,8 @@ def text_recognition(path_to_image):
         "feature_fusion/concat_3"]
 
     # load the pre-trained EAST text detector
-    print("[INFO] loading EAST text detector...")
-    net = cv2.dnn.readNet('./frozen_east_text_detection.pb')
+    # print("[INFO] loading EAST text detector...")
+    net = cv2.dnn.readNet('./models/frozen_east_text_detection.pb')
 
     # construct a blob from the image and then perform a forward pass of
     # the model to obtain the two output layer sets
